@@ -1,0 +1,168 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+main h1 {
+  text-align: center;
+  font-family: Helvetica, Verdana, sans-serif;
+}
+
+main .root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .root .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 25rem;
+  height: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  background: #f1f2f3;
+  color: #222;
+  margin: 2rem;
+}
+
+main .root .card .phone__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 10rem;
+  height: 100%;
+  background: #222;
+  color: whitesmoke;
+}
+
+main .root .card .phone__name h2 {
+  font-size: 1.3rem;
+  margin: 0 .5rem;
+  border-bottom: 3px solid #222;
+}
+
+main .root .card .caracteristicas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+main .root .card .caracteristicas p span {
+  font-weight: 600;
+}
+
+.section__alta__gama h1 {
+  text-align: center;
+  font-family: Helvetica, Verdana, sans-serif;
+}
+
+.section__alta__gama .alta__gama {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section__alta__gama .alta__gama .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 25rem;
+  height: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  background: #f1f2f3;
+  color: #222;
+  margin: 2rem;
+}
+
+.section__alta__gama .alta__gama .card .phone__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 10rem;
+  height: 100%;
+  background: #222;
+  color: whitesmoke;
+}
+
+.section__alta__gama .alta__gama .card .phone__name h2 {
+  font-size: 1.3rem;
+  margin: 0 .5rem;
+  border-bottom: 3px solid #222;
+}
+
+.section__alta__gama .alta__gama .card .caracteristicas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.section__alta__gama .alta__gama .card .caracteristicas p span {
+  font-weight: 600;
+}
+/*# sourceMappingURL=main.css.map */
