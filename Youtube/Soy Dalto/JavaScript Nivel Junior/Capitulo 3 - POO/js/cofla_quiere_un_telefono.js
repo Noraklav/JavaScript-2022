@@ -1,8 +1,8 @@
-/** 
- * Crear un sistema para :
- * - Mostrale a Cofla las particularidades de los 3 celulares
- * - Cada uno debe tener color, peso, resolucion de pantalla, camara y memoria RAM
- * - Deben poder prender, reiniciar, tomar fotos y grabar
+/** A) 
+ *@ Crear un sistema para :
+ *@ - Mostrale a Cofla las particularidades de los 3 celulares
+ *@ - Cada uno debe tener color, peso, resolucion de pantalla, camara y memoria RAM
+ *@ - Deben poder prender, reiniciar, tomar fotos y grabar
 */
 
 class Telefono{
@@ -115,7 +115,7 @@ class AltaGama extends Telefono{
   }
 
   mostrarInfoUpdated(){
-    console.log(`${super.mostrarInfo()}\nCamara Lenta: ${this.slowMotion}\nReconocimiento Facial: ${this.faceId}\nCamara(s) Extra: ${this.camaraExtra()}`)
+    return console.log(`${super.mostrarInfo()}\nCamara Lenta: ${this.slowMotion}\nReconocimiento Facial: ${this.faceId}\nCamara(s) Extra: ${this.camaraExtra()}`)
   }
 
 }
@@ -160,8 +160,64 @@ altaGamaArray.forEach(e => cardAltaGama(e))
 cellAltaGama1.mostrarInfoUpdated()
 
 
-let button = document.createElement('button')
-button.textContent = 'Seguis aca'
-const url = 'https://youtu.be/z95mZVUcJ-E?t=18097'
-button.onclick = () => window.open(url)
-document.body.appendChild(button)
+//@ C)Cofla ya tiene su nuevo celular y ahora está mirando las aplicaciones del Play Store ya que quiere jugar juegos que sean muy populares,que tengan buena puntuación y que pesen poco, pero las 7 apps que llamaron su atención son un tanto similares y sabe que si se descarga todas,probablemente juegue con todas, pero él se va a descargar solo 2 para tener perdidas innecesarias de tiempo jugando juegos con su celular,pero el problema viene cuando no puede decidirse cual de todas estas aplicaciones es la que vaadescargar
+//@     CREAR SOLUCIONES
+//@      - Crear un sistema que ayude a Cofla a decidir cual app descargar
+//@      - La informacion de los instaladores debe contener la cantidad de descargas, la puntuacion y el peso
+//@      - Las Apps se deben poder instalar, abrir, cerrar y desisntalar
+
+class Apps{
+  constructor(descargas, puntuacion, peso){
+    this.descargas = descargas
+    this.puntuacion = puntuacion
+    this.peso = peso
+    this.instalada = false
+    this.iniciada = false
+  }
+
+  abrir(){
+    if(this.iniciada == false){
+      this.iniciada = true
+      alert('Abriendo aplicacion')
+    }
+  }
+
+  cerrar(){
+    if(this.iniciada == true){
+      this.iniciada = false
+      alert('Cerrando aplicacion')
+    }
+  }
+  
+  instalar(){
+    let confirmacion = confirm('Quieres instalar esta aplicacion?')
+    if(this.instalada == false && confirmacion == true){
+        this.instalada = true
+        alert('Instalacion completada')
+      }
+  }
+
+  desinstalar(){
+    let confirmacion = confirm('Quieres desinstalar esta aplicacion?')
+    if(this.instalada == true && confirmacion == true){
+        this.instalada = false
+        alert('Desinstalacion completada')
+      }
+  }
+
+  appInfo(){
+    return `
+    Descargas: <b>${this.descargas}</b><br>Puntuacion: <b>★${this.puntuacion}</b><br>Peso: <b>${this.peso}mb</b><br>`
+  }
+}
+
+let app1 = new Apps(50000, 4.7, 23)
+let app2 = new Apps(217500, 4.3, 51)
+let app3 = new Apps(12300, 3.8, 5.6)
+let app4 = new Apps(1500000, 4.5, 65)
+// app1.appInfo()
+document.write(`${app1.appInfo()}<br>${app2.appInfo()}<br>${app3.appInfo()}<br>${app4.appInfo()}<br>`)
+// app1.instalar()
+// app1.abrir()
+// app1.cerrar()
+// app1.desinstalar()
