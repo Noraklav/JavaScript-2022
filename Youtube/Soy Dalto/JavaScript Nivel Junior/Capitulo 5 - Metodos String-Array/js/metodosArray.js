@@ -1,5 +1,5 @@
-document.body.innerHTML = ''
-const root = document.querySelector('.root')
+const root = document.querySelector('.rootArr')
+
 const dWrite = str =>{
 	let p = document.createElement('p')
 	p.innerHTML = str
@@ -12,6 +12,7 @@ const randomNumbers = (arr, limite, maxNum) =>{
 	}
 }
 
+dWrite('<h2>Metodos Array</h2>')
 
 let array = ['Agustin', 'Noraklav', 'Crypther']
 dWrite('Array original: '+ array.join(', ')+'<br>')
@@ -85,4 +86,4 @@ dWrite(`lastIndexOf: ${array.lastIndexOf('vaca')}`)
 array = ['Agustin', 'Noraklav', 'Crypther', 'Valkaron', 'ElSacacorchos', 'Novathium']
 
 filterResult = array.filter(e => e.includes('o'))
-dWrite(filterResult)
+dWrite('Filtrado: '+filterResult)

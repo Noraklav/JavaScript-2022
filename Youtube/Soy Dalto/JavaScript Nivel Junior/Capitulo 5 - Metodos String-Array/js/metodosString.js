@@ -1,6 +1,11 @@
+let rootStr = document.querySelector('.rootStr')
+
+
 let cadena = 'String epico'
 let resultado;
 const docWrite = str => document.write(str)
+
+docWrite('<h2>Metodos String</h2>')
 
 // Concat
 resultado = cadena.concat(' y concatenado')
