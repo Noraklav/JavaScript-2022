@@ -1,0 +1,27 @@
+#root{
+  display: flex;
+  flex-flow: row wrap;
+  .container{
+    .card-body{
+      text-align: center;
+      h5{
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+      p{
+        display: flex;
+        flex-flow: column;
+        margin: .2rem;
+        span{
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.aside{
+  font-size: 1.2rem;
+}

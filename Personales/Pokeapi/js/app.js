@@ -13,7 +13,6 @@ const fetchData = async (id) =>{
   const resp = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
   const data = await resp.json()
 
-  
   const pokeObject = {
     picture: data.sprites.front_default,
     name: data.species.name,
