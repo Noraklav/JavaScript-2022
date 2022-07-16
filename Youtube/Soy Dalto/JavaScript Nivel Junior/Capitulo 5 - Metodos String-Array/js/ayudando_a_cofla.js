@@ -1,4 +1,5 @@
 const coflaSpace = document.querySelector('.cofla')
+const docWrite = str =>document.write(str)
 
 const addDiv = str =>{
   let div = document.createElement('div')
@@ -36,24 +37,29 @@ const calculadoraDeLaSalada = (select) =>{
           // Crear una funcion que nos diga en cuantas clases esta cofla
           // Nombrar las clases en las que esta y los profesores de cada una
 
+const materiasObj = {
+  'fisica': ['Simaris', 'Umbra', 'Volt', 'Rhino', 'Nekros', 'Ivara', 'Frost'],
+  'programacion': ['Suda', 'Umbra', 'Rhino', 'Cofla', 'Saryn', 'Nekros', 'Excalibur', 'Nova'],
+  'logica': ['Teshin', 'Umbra', 'Volt', 'Cofla', 'Saryn', 'Nekros', 'Ash', 'Trinity'],
+  'matematica': ['Ordis', 'Volt', 'Rhino', 'Saryn', 'Nekros', 'Cofla', 'Mesa', 'Wukong']
+}
 const getInfo = (materia) =>{
-  materias={
-    'fisica':['Umbra', 'Volt', 'Rhino', 'Nekros', 'Ivara', 'Frost'],
-    'programacion': ['Umbra', 'Rhino', 'Saryn', 'Nekros', 'Excalibur', 'Nova'],
-    'logica': ['Umbra', 'Volt', 'Saryn', 'Nekros', 'Ash', 'Trinity'],
-    'matematica': ['Volt', 'Rhino', 'Saryn', 'Nekros', 'Mesa', 'Wukong']
-  }
-
-  // Esto devuelve los nombres de los alumnos registrados en la materia
-  if(materias[materia] !== undefined){ return `<br><b>Alumnos registrados en ${materia}</b><br>${materias[materia].sort().join(', ')}` }
+  if(materiasObj[materia] !== undefined) return [materiasObj[materia], materia]
   else return false
 }
 
-let info = getInfo('fisica')
+let infoMateria = 'programacion'
+let info = getInfo(infoMateria)
 
-if(info !== false) document.write(info)
 
-
+if(info !== false){
+  let materia = info[1].toUpperCase()
+  let profesor = info[0][0].toUpperCase()
+  let alumnos = info[0].slice(1).join(', ')
+  docWrite(`Materia: <b>${materia}</b> <br>Profesor: <b>${profesor}</b><br>Alumnos:<b style='color: #aa0099'>${alumnos}</b>`)
+}else{
+  docWrite(`"${infoMateria}" no existe`)
+}
 
 // * - - - - - - - - - - - - - - - - - - - -
 // @Botones para probar los ejercicios
