@@ -4,34 +4,101 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/index.css">
   <title>DOM</title>
 </head>
 <body>
-  <!-- <p class="parrafo">SOY UN PARRAFO :D</p>
-  <p class="parrafo">SOY UN PARRAFO :D</p>
-  <p id="parrafo">SOY UN PARRAFO CON ID :D</p> -->
+  <!-- DOM 1 -->
+  <section class="d-none">
+    <!-- <p class="parrafo">SOY UN PARRAFO :D</p>
+    <p class="parrafo">SOY UN PARRAFO :D</p>
+    <p id="parrafo">SOY UN PARRAFO CON ID :D</p> -->
 
-  <!-- Metodos de atributos -->
-  <input type="range" class="rangoEtario">
-  <label for="#">Rango de Edad</label>
+    <!-- Metodos de atributos -->
+    <input type="range" class="rangoEtario">
+    <label for="#">Rango de Edad</label>
 
-  <!-- Atributos globales -->
+    <!-- Atributos globales -->
+    <hr>
+    <h1 class="title" hidden>Titulo super epico</h1>
+
+    <!-- Atributos con inputs -->
+    <hr>
+    <input type="text" class="input-normal">
+
+    <form id="formulario">
+      <input type="text" name="" id="formInput" placeholder="Bananaaaa">
+      <input type="submit" name="" id="">
+    </form>
+    <!-- <input type="submit" form="formulario"> -->
+
+    <hr>
+    <!-- Atributos con style -->
+    <h1 id="h1Epico">Elemento super epico a modificar</h1>
+    
+    <hr>
+    <h2 id="epicClassList" class="mucho-texto">classList :D</h2>
+    
+    <hr>
+    <!-- Obtencion y modificacion de elementos -->
+    <div class="divElements">
+      <p class="titulardo">Titulardo a <span class="modificar">Modificar</span></h2>
+    </div>
+
+    <hr>
+    <!-- Crear elementos -->
+    <div id="elementsContainer">
+
+    </div>
+  </section>
+
   <hr>
-  <h1 class="title" hidden>Titulo super epico</h1>
+  <!--* DOM 2 -->
+  <!-- Obtencion y modificacion de Childs -->
+  <div class="childsContainer">
+    <h2>Un h2 fachero</h2>
+    <h4>Un h4 heroico</h4>
+    <p>Un parrafo epicardo</p>
+  </div>
 
-  <!-- Atributos con inputs -->
   <hr>
-  <input type="text" class="input-normal">
+  <!-- Metodos de childs -->
+  <div class="childsContainer2 d-flex flex-column">
+    <h2 class="h2_viejo">Titulardo mega epico viejo</h2>
+    <p class="p_viejo">Parrafo mega epico viejo</p>
+  </div>
 
-  <form id="formulario">
-    <input type="text" name="" id="formInput" placeholder="Bananaaaa">
-    <input type="submit" name="" id="">
-  </form>
-  <!-- <input type="submit" form="formulario"> -->
+  <hr>
+  <!-- Metodos de parents -->
+  <div class="parentCont d-flex flex-column">
+    <h2 class="h2Parent">Metodos con parents</h2>
+    <p class="pParent">Parrafo mega epico</p>
+  </div>
 
-  <a href="https://youtu.be/z95mZVUcJ-E?t=30586">Seguis aca</a>
+  <hr>
+  <!-- Metodos de siblings -->
+  <div class="siblingCont d-flex flex-column">
+    <h4>h4 - Metodos con siblings</h4>
+    <h2 class="h2Sibling">h2 - Metodos con siblings</h2>
+    <p class="pSibling">Siblings paragraph</p>
+  </div>
 
-  <script src="js/index.js"></script>
+  <hr>
+  <!-- Nodos - Extra -->
+  <div class="div div1">
+    DIV 1
+    <div class="div div2">
+      DIV 2
+      <div class="div-3"></div>
+    </div>
+  </div>
+
+  <a href="https://www.youtube.com/watch?v=z95mZVUcJ-E&t=33985s" target="_blank">Seguis aca</a>
+  <script src="js/dom1.js" type="text/javascript"></script>
+  <script src="js/dom2.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

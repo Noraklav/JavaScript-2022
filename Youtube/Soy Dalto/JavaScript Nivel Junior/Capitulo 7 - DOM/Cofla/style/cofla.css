@@ -1,0 +1,32 @@
+*{font-family: 'Montserrat', sans-serif;margin: 0;}
+
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-item{
+  flex-grow: 1;
+  text-align: center;
+  margin: 20px;
+  width: 250px;
+  border: 2px solid #222;
+  padding: 20px 0;
+}
+
+.flex-item:hover{
+  border-color:red;
+  box-shadow: 0px 0px 13px rgb(255, 80, 80);
+}
+
+h2{
+  color: red;
+}
+h3{
+  color: #999
+}
+
+.price{
+  color: purple;
+}

@@ -36,8 +36,9 @@ const fetchData = async () =>{
   calcBtn.onclick = e =>{
     e.preventDefault()
     let inputValue = parseFloat(inputPrice.value)
-    let total = (inputValue + (inputValue*.66)) * parseFloat(dolarArray[0].buy)
-    inputValue!=NaN
+    let total = (inputValue + (inputValue*.66)) * parseFloat(dolarArray[0].sold)
+
+    inputPrice.value != ''
       ?precioFinal.innerHTML = total.toFixed(2)
       :precioFinal.innerHTML = '0,00'
   }

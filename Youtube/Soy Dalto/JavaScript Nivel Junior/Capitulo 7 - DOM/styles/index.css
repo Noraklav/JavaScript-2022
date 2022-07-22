@@ -7,4 +7,8 @@ body hr {
   border: 1px solid #333;
   background: #333;
 }
+
+body .grande {
+  font-size: 50px;
+}
 /*# sourceMappingURL=index.css.map */
